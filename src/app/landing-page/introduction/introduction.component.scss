@@ -1,0 +1,37 @@
+.near-card_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.near-card_row {
+  flex-grow: 1;
+  justify-content: center;
+  display:flex;
+}
+
+
+.near-card_item {
+  max-width: 20%;
+}
+
+.near-card_btn-holders {
+  display: flex;
+  justify-content: center;
+  > a {
+    margin-left: 25px;
+  }
+}
+
+.near_card {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.near_card-body {
+  padding: 10px;
+}

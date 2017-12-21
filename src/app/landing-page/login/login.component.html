@@ -1,0 +1,42 @@
+<div class="near-card_content">
+  <div class="near-card_row">
+    <div class="near-card_item">
+      <div class="card near_card">
+        <div class="card-body near_card-body">
+          <div class="near-card_header">
+            <h2>Log In</h2>
+          </div>
+          <div class="alert alert-danger" role="alert" *ngIf="badCredentials">
+            <strong>Login failed</strong> {{badCredentials}}
+          </div>
+          <div class="alert alert-success" role="alert" *ngIf="registerSuccess">
+            <strong>Register success</strong> Please login :)
+          </div>
+          <div class="alert alert-warning" role="alert" *ngIf="logoutSuccess">
+            <strong>Logout success</strong> Why did you that, don't leave, plssss :(
+          </div>
+          <form [formGroup]="userLoginForm" novalidate>
+            <mat-form-field class="near-full-width">
+              <input matInput placeholder="User name" type="text" formControlName="userName">
+              <mat-error>{{errors.userName}}</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="near-full-width">
+              <input matInput placeholder="Password" type="password" formControlName="password">
+              <mat-error>{{errors.password}}</mat-error>
+            </mat-form-field>
+
+            <div class="near-card_btn-holders">
+              <button mat-raised-button class="btn btn-primary near-card_btn" [disabled]="userLoginForm.invalid"
+                      (click)="login()">
+                Login
+              </button>
+              <button mat-raised-button type="button" class="btn btn-secondary" (click)="goToLandingPage()">Back
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
