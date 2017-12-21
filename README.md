@@ -1,5 +1,7 @@
 # NearWebFrontend
 
+LIVE: [near-web](http://near-frontend.s3-website.us-east-2.amazonaws.com/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
 ## Development server
