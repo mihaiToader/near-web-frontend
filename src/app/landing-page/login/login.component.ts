@@ -17,6 +17,7 @@ export class LoginComponent {
   badCredentials = '';
   registerSuccess = false;
   logoutSuccess = false;
+  displaySpinner = false;
 
   constructor(private formBuilder: FormBuilder,
               private authenticationService: AuthentificationService,
@@ -24,13 +25,16 @@ export class LoginComponent {
               private route: ActivatedRoute) {
     this.createForm();
     this.route.params.subscribe(params => {
+      console.log(params);
       if (params.status !== undefined) {
         switch (params.status) {
           case 'success':
             this.registerSuccess = true;
+            this.logoutSuccess = false;
             break;
           case 'logout':
             this.logoutSuccess = true;
+            this.registerSuccess = false;
             break;
           default:
             console.log(params.status);
@@ -51,13 +55,16 @@ export class LoginComponent {
     const user: any = {};
     user.password = this.userLoginForm.get('password').value;
     user.username = this.userLoginForm.get('userName').value;
+    this.displaySpinner = true;
     this.authenticationService.login(user)
       .then((userData) => {
         console.log('user connected', userData);
+        this.displaySpinner = false;
         this.router.navigate(['auth/home']);
       })
       .catch(() => {
         this.badCredentials = 'Username or password incorrect';
+        this.displaySpinner = false;
       });
   }
 

@@ -12,11 +12,12 @@ import {
   MatInputModule,
   MatSelectModule,
   MatSliderModule,
-  MatToolbarModule,
+  MatToolbarModule
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthentificationService } from '../landing-page/authentification.service';
 import { AuthGuard } from '../guards/auth.guard';
+import { HelpersModule } from '../helpers/helpers.module';
 
 const sharedModules = [
   HttpClientModule,
@@ -36,6 +37,7 @@ const sharedModules = [
   MatSliderModule,
   MatSelectModule,
   MatDialogModule,
+  HelpersModule,
 ];
 const sharedComponents = [];
 const sharedProviders = [
