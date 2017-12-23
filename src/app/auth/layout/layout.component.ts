@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthentificationService } from '../../landing-page/authentification.service';
 
 @Component({
   selector: 'near-layout',
   templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss']
+  styleUrls: ['./layout.component.scss'],
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent {
 
-  constructor() { }
+  constructor(private router: Router,
+              private authenticationService: AuthentificationService) {
+  }
 
-  ngOnInit() {
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['login', 'logout']);
   }
 
 }

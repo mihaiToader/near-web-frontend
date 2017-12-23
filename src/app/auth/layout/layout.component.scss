@@ -1,0 +1,38 @@
+.near-layout-content {
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  flex-direction: column;
+}
+
+.near-layout-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.near-layout-middle-row {
+  flex-grow: 7;
+}
+
+.near-layout-item {
+  flex-grow: 1;
+}
+
+.near-layout-middle-item {
+  flex-grow: 8;
+}
+
+.near-layout-corner-button {
+  min-height: 30px;
+  min-width: 60px;
+}
+
+.btn-layout-near {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

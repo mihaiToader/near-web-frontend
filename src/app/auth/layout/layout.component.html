@@ -1,3 +1,35 @@
-<div class="landing-page_background">
-  <router-outlet></router-outlet>
+<div class="near-layout-content">
+  <div class="near-layout-row">
+    <div class="near-layout-item near-layout-corner-button">
+      <button type="button" class="btn btn-primary btn-layout-near">Home</button>
+    </div>
+    <div class="near-layout-item near-layout-middle-item">
+
+    </div>
+    <div class="near-layout-item near-layout-corner-button">
+      <button type="button" class="btn btn-warning btn-layout-near">Profile</button>
+    </div>
+  </div>
+  <div class="near-layout-row near-layout-middle-row">
+    <div class="near-layout-item">
+
+    </div>
+    <div class="near-layout-item near-layout-middle-item">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="near-layout-item">
+
+    </div>
+  </div>
+  <div class="near-layout-row">
+    <div class="near-layout-item near-layout-corner-button">
+      <button type="button" class="btn  btn-success btn-layout-near">Friends</button>
+    </div>
+    <div class="near-layout-item near-layout-middle-item">
+
+    </div>
+    <div class="near-layout-item near-layout-corner-button">
+      <button type="button" class="btn btn-danger btn-layout-near" (click)="logout()">Logout</button>
+    </div>
+  </div>
 </div>
