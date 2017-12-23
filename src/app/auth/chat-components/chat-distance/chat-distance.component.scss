@@ -1,0 +1,35 @@
+.near-card_choose-distance {
+  margin: auto;
+  max-width: 200px;
+  top:50%
+}
+
+.btn-near_add-chat  {
+  max-width: 25px;
+  min-width: 25px;
+  padding: 0 !important;
+}
+
+.btn-near_add-chat_up {
+  position: absolute;
+  bottom: 105%;
+  left: 45%;
+}
+
+.btn-near_add-chat_right {
+  position: absolute;
+  top: 50%;
+  left: 105%;
+}
+
+.btn-near_add-chat_bottom {
+  position: absolute;
+  left: 45%;
+  top: 105%;
+}
+
+.btn-near_add-chat_left {
+  position: absolute;
+  top: 50%;
+  right: 105%
+}
