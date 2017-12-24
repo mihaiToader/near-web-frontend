@@ -18,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthentificationService } from '../landing-page/authentification.service';
 import { AuthGuard } from '../guards/auth.guard';
 import { HelpersModule } from '../helpers/helpers.module';
+import { DragScrollModule } from 'ngx-drag-scroll';
 
 const sharedModules = [
   HttpClientModule,
@@ -38,6 +39,7 @@ const sharedModules = [
   MatSelectModule,
   MatDialogModule,
   HelpersModule,
+  DragScrollModule,
 ];
 const sharedComponents = [];
 const sharedProviders = [
