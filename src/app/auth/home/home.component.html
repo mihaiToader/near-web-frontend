@@ -1,3 +1,14 @@
-<div class="near-home" drag-scroll>
-  <near-chat-distance></near-chat-distance>
+<div class="near-home" drag-scroll [scrollbar-hidden]="true">
+  <div>  <!--w e need this so the drag-scroll can work fine :) -->
+    <near-chat-distance></near-chat-distance>
+    <div class="test">
+      <near-chat-main></near-chat-main>
+      <near-chat-main></near-chat-main>
+      <near-chat-main></near-chat-main>
+      <near-chat-main></near-chat-main>
+      <near-chat-main></near-chat-main>
+    </div>
+    <near-chat-main></near-chat-main>
+    <near-chat-main></near-chat-main>
+  </div>
 </div>

@@ -1,7 +1,13 @@
+.near-card_choose-distance_container {
+  width: 280px;
+  height: 210px;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+}
+
 .near-card_choose-distance {
-  margin: auto;
   max-width: 200px;
-  top:50%
 }
 
 .btn-near_add-chat  {

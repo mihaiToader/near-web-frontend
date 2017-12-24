@@ -1,0 +1,23 @@
+<div class="near-card_choose-distance_container">
+  <span class="badge badge-pill badge-success" *ngIf="active">Active</span>
+  <span class="badge badge-pill badge-danger" *ngIf="!active">Inactive</span>
+  <div class="card near-chat_card">
+    <div class="card-block">
+      <near-chat-message></near-chat-message>
+      <near-chat-message></near-chat-message>
+      <near-chat-message></near-chat-message>
+    </div>
+    <button class="btn btn-warning btn-near-chat btn-near-chat_distance">Distance: 100m</button>
+    <button class="btn btn-primary btn-near-chat btn-near-chat_users">Users: 200</button>
+    <button class="btn btn-danger btn-near-chat btn-near-chat_close">Close</button>
+
+    <div class="near-card_choose-distance_input-message_container">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="">
+        <span class="input-group-btn">
+        <button class="btn btn-info" type="button">Send</button>
+      </span>
+      </div>
+    </div>
+  </div>
+</div>

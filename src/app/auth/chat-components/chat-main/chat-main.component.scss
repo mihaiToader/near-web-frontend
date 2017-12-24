@@ -1,0 +1,64 @@
+.near-card_choose-distance_container {
+  width: 475px;
+  height: 320px;
+}
+
+.near-chat_card {
+  width: 400px;
+  height: 200px;
+}
+
+.btn-near-chat {
+  padding: 5px !important;
+}
+
+.btn-near-chat_distance {
+  position: absolute;
+  top: 128%;
+  width:48%;
+}
+
+.btn-near-chat_users {
+  position: absolute;
+  top: 128%;
+  width: 48%;
+  left: 52%;
+}
+
+.btn-near-chat_close {
+  position: absolute;
+  top: 0;
+  left: 102%;
+}
+
+.card-block {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.near-card_choose-distance_input-message_container {
+  position: absolute;
+  top: 105%;
+  width: 100%;
+}
+
+
+.card-block::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.card-block::-webkit-scrollbar
+{
+  width: 15px;
+  background-color: #F5F5F5;
+}
+
+.card-block::-webkit-scrollbar-thumb
+{
+  background: #0ae -webkit-gradient(linear, 0 0, 0 100%,
+    color-stop(.5, rgba(255, 255, 255, .2)),
+    color-stop(.5, transparent), to(transparent));
+}
+
