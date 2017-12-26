@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  min-height: 50px;
+  min-height: 80px;
 }
 
 .near-layout-row:not(:last-child) {
@@ -32,9 +32,19 @@
   flex-grow: 8;
 }
 
+.near-layout-middle-item_choose-distance{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .near-layout-corner-button {
-  min-height: 50px;
-  min-width: 60px;
+  height: 80px;
+  width: 60px;
+}
+
+.near-layout-middle-left {
+  width: 60px;
 }
 
 .btn-layout-near {

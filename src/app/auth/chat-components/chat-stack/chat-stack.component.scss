@@ -1,0 +1,39 @@
+.near_chat-stack_container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: auto;
+  height: 100%;
+}
+
+.near_chat-stack_btn-container {
+  margin: 2px auto;
+  width: 80%;
+}
+.near_chat-stack_btn {
+  width: 100%;
+}
+
+.near_chat-stack_container::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.near_chat-stack_container::-webkit-scrollbar
+{
+  width: 8px;
+  height: 8px;
+  background-color: #F5F5F5;
+}
+
+.near_chat-stack_container::-webkit-scrollbar-thumb
+{
+  background: #FFF -webkit-gradient(linear,
+    40% 0%,
+    75% 84%,
+    from(#4D9C41),
+    to(#19911D),
+    color-stop(.6, #54DE5D));
+}

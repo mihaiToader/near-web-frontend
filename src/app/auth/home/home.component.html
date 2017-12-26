@@ -1,14 +1,5 @@
-<div class="near-home" drag-scroll [scrollbar-hidden]="true">
-  <div>  <!--w e need this so the drag-scroll can work fine :) -->
-    <near-chat-distance></near-chat-distance>
-    <div class="test">
-      <near-chat-main></near-chat-main>
-      <near-chat-main></near-chat-main>
-      <near-chat-main></near-chat-main>
-      <near-chat-main></near-chat-main>
-      <near-chat-main></near-chat-main>
+<div class="near-home">
+    <div *ngFor="let chatColumn of chats; let i=index" [style.grid-column-start]="i+1" class="near-row card" [dragula]="'sixth-bag'" >
+      <near-chat-main *ngFor="let chat of chatColumn" [distance]="chat" (minimise)="onMinimise($event)"></near-chat-main>
     </div>
-    <near-chat-main></near-chat-main>
-    <near-chat-main></near-chat-main>
-  </div>
 </div>

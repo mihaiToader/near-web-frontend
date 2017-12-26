@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'near-chat-main',
@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatMainComponent implements OnInit {
   active = true;
+  @Input() distance;
+  @Output() minimise = new EventEmitter<any>();
 
-  constructor() { }
+    constructor() { }
 
   ngOnInit() {
+  }
+
+  onMinimise($event) {
+      this.minimise.emit($event);
   }
 
 }

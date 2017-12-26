@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'near-chat-distance',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat-distance.component.scss']
 })
 export class ChatDistanceComponent implements OnInit {
+  @Output() onAddLeft;
 
   constructor() { }
 

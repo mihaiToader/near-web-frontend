@@ -27,8 +27,21 @@
 
 .btn-near-chat_close {
   position: absolute;
+  top: 85%;
+  left: 102%;
+}
+
+.btn-near-chat_move {
+  position: absolute;
   top: 0;
   left: 102%;
+}
+
+.btn-near-chat_minimise {
+  position: absolute;
+  top: 22%;
+  left: 102%;
+  width: 36px;
 }
 
 .card-block {

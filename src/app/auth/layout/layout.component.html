@@ -11,11 +11,11 @@
     </div>
   </div>
   <div class="near-layout-row near-layout-middle-row">
-    <div class="near-layout-item">
-
+    <div class="near-layout-item near-layout-middle-left">
+      <ng-content select="[left]"></ng-content>
     </div>
     <div class="near-layout-item near-layout-middle-item">
-      <router-outlet></router-outlet>
+      <ng-content select="[middle]"></ng-content>
     </div>
     <div class="near-layout-item">
 
@@ -25,8 +25,8 @@
     <div class="near-layout-item near-layout-corner-button">
       <button type="button" class="btn  btn-success btn-layout-near">Friends</button>
     </div>
-    <div class="near-layout-item near-layout-middle-item">
-
+    <div class="near-layout-item near-layout-middle-item near-layout-middle-item_choose-distance">
+      <ng-content select="[down]"></ng-content>
     </div>
     <div class="near-layout-item near-layout-corner-button">
       <button type="button" class="btn btn-danger btn-layout-near" (click)="logout()">Logout</button>

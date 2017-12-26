@@ -7,9 +7,11 @@
       <near-chat-message></near-chat-message>
       <near-chat-message></near-chat-message>
     </div>
-    <button class="btn btn-warning btn-near-chat btn-near-chat_distance">Distance: 100m</button>
+    <button class="btn btn-warning btn-near-chat btn-near-chat_distance">Distance: {{distance}}m</button>
     <button class="btn btn-primary btn-near-chat btn-near-chat_users">Users: 200</button>
     <button class="btn btn-danger btn-near-chat btn-near-chat_close">Close</button>
+    <button class="btn btn-primary btn-near-chat btn-near-chat_move handle"><mat-icon class="handle">open_with</mat-icon></button>
+    <button class="btn btn-warning btn-near-chat btn-near-chat_minimise handle" (click)="onMinimise(distance)">-</button>
 
     <div class="near-card_choose-distance_input-message_container">
       <div class="input-group">

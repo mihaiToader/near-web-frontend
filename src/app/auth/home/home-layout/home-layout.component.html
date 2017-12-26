@@ -1,0 +1,5 @@
+<near-layout>
+  <near-home middle #home (minimise)="chatStack.onAddChat($event)"></near-home>
+  <near-home-bottom-menu down (createChat)="home.onAddChat($event)" (addColumn)="home.onAddColumn()"></near-home-bottom-menu>
+  <near-chat-stack left #chatStack></near-chat-stack>
+</near-layout>
